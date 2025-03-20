@@ -11,6 +11,7 @@
     --second-bg-color: #112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
+    --black: #000000;
 }
 
 header {
@@ -172,6 +173,7 @@ li, a, button, .prenom{
 .skills-container > table {
     margin: 0 auto; 
     display: table;
+    padding: 25px 0;
     border-spacing: 15px;
 }
 
@@ -187,9 +189,151 @@ td {
 }
 
 .white-filter {
-    display: block;
     filter: invert();
     width: 50px;
     height: auto;
     margin: 5px auto;
+}
+
+td > .white-filter {
+    display: block;
+}
+
+.portfolio-container {
+    top: 0;
+    left: 0;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    background-color: var(--second-bg-color);
+    padding-top: 2vh;
+}
+
+.portfolio-title {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+}
+
+.uninote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.uninote-text {
+    margin-right: 100px;
+}
+
+.uninote > img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.uninote h3 {
+    font-size: 40px;
+}
+
+.uninote p {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/*/ ====== SELLSIDE ====== /*/
+.sellside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sellside-text {
+    margin-right: 100px;
+}
+
+.sellside > img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.sellside h3 {
+    font-size: 40px;
+}
+
+.sellside p {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/*/ ====== Pestisee ====== /*/
+.pestisee {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pestisee-text {
+    margin-right: 100px;
+}
+
+.pestisee > img {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.pestisee h3 {
+    font-size: 40px;
+}
+
+.pestisee p {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+footer {
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100vw;
+    height: 20vh;
+    background-color: var(--black);
+    text-align: center;
+}
+
+.footer-text > p {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.footer-icons > a > img {
+    margin: 10px 20px ;
+}
+
+hr {
+    margin: 15px auto;
+    width: 60%;
 }

@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Vincent ROURE</title>
     <link href="/style/style.css" rel="stylesheet">
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/14.3.0/simpleicons.svg">
+    <link rel="stylesheet" href="style/swiper.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
@@ -19,10 +17,10 @@
         <p class="prenom"><a href="#">Vincent ROURE</a></p>
         <div class="navbar">
             <ul class="navlink">
-                <li><a href="">Accueil</a></li>
+                <li><a href="#">Accueil</a></li>
                 <li><a href="#propos">À propos</a></li>
-                <li><a href="">Mes compétences</a></li>
-                <li><a href="">Mes travaux</a></li>
+                <li><a href="#skills">Mes compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
             </ul>
         </div>
         <a href="mailto:vincentroure.pro@gmail.com" class="contact"><button>Contact</button></a>
@@ -43,7 +41,7 @@
 
 
     <div class="propos-container">
-        <h2 data-aos="fade-down" class="propos" id="propos">
+        <h2 data-aos="fade-right" class="propos" id="propos">
             À propos
         </h2>
         <img data-aos="fade-right" src="ressources/img/photo_linkedin.jpg" alt="Vincent">
@@ -55,8 +53,8 @@
     </div>
 
     <div class="skills-container">
-        <h3 class="skills-title">Mes coméptences</h3>
-        <table>
+        <h3 data-aos="fade-right" class="skills-title" id="skills">Mes coméptences</h3>
+        <table data-aos="fade-right">
             <tr>
                 <td>
                     <img src="ressources/svg/html5.svg" alt="" class="white-filter">
@@ -73,20 +71,6 @@
             </tr>
             <tr>
                 <td>
-                    <img src="ressources/svg/unity.svg" alt="" class="white-filter">
-                    Unity 3D
-                </td>
-                <td>
-                    <img src="ressources/svg/unrealengine.svg" alt="" class="white-filter">
-                    Unreal Engine 5
-                </td>
-                <td>
-                    <img src="ressources/svg/blender.svg" alt="" class="white-filter">
-                    Blender 3D
-                </td>
-            </tr>
-            <tr>
-                <td>
                     <img src="ressources/svg/php.svg" alt="" class="white-filter">
                     PHP
                 </td>
@@ -97,6 +81,20 @@
                 <td>
                     <img src="ressources/svg/eclipseide.svg" alt="" class="white-filter">
                     Java
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="ressources/svg/cplusplus.svg" alt="" class="white-filter">
+                    C++
+                </td>
+                <td>
+                    <img src="ressources/svg/c-sharp-logo.png" alt="" class="white-filter">
+                    C#
+                </td>
+                <td>
+                    <img src="ressources/svg/linux.svg" alt="" class="white-filter">
+                    Linux
                 </td>
             </tr>
             <tr>
@@ -127,17 +125,71 @@
                     Adobe InDesign
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <img src="ressources/svg/unity.svg" alt="" class="white-filter">
+                    Unity 3D
+                </td>
+                <td>
+                    <img src="ressources/svg/unrealengine.svg" alt="" class="white-filter">
+                    Unreal Engine 5
+                </td>
+                <td>
+                    <img src="ressources/svg/blender.svg" alt="" class="white-filter">
+                    Blender 3D
+                </td>
+            </tr>
         </table>
     </div>
 
+    <div class="portfolio-container">
+        <h1 class="portfolio-title" id="#portfolio">
+            Portfolio
+        </h1>
 
+        <div class="uninote">
+            <img src="ressources/img/Logo.png" alt="">
+            <div class="uninote-text">
+                <a href="https://github.com/ZIK3Y/sae203"><h3>Uninote</h3></a>
+                <p>Site qui permet aux enseignants d'entrer les résultats scolaires aux étudiants, et ces derniers, peuvent les consulter.</p>    
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="sellside">
+            <div class="sellside-text">
+                <a href="https://github.com/ZIK3Y/projet_nsi/tree/master"><h3>Sellside</h3></a>
+                <p>Application en <b>Python</b> qui permet la gestion des commandes d'une entreprise grâce à une base de données</p>    
+            </div>
+            <img src="ressources/img/logo_app.png" alt="">
+        </div>
+
+        <hr>
+        
+        <div class="pestisee">
+            <img src="ressources/img/pestisee.webp" alt="">
+            <div class="pestisee-text">
+                <a href="https://github.com/MatteoBaldinetti/SAE-301-303"><h3>Pestisee</h3></a>
+                <p>Site qui permet la comparaison entre produits agro-alimentaire par rapport à plusieurs statistiques.</p>    
+            </div>
+        </div>
+  
+
+    </div>
     
-            
+    <footer>
+        <div class="footer-text">
+            <p>© 2025 Vincent Roure. <br> Tous droits réservés.</p>
+        </div>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/vincent-roure-3a3ba929b/"><img src="ressources/svg/linkedin.svg" alt="" class="white-filter"></a>
+            <a href="https://github.com/ZIK3Y"><img src="ressources/svg/github.svg" alt="" class="white-filter"></a>
+            <a href="mailto:vincentroure.pro@gmail.com"><img src="ressources/svg/envelope-regular.svg" alt="" class="white-filter"></a>
+        </div>
+    </footer>
 
-    <script src="script/script.js"></script>
-<!--
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
--->
+    <script src="script/script.js"></script>      
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
 </body>
