@@ -101,6 +101,16 @@ li, a, button, .prenom{
     margin-top: 15px;
 }
 
+.mon-cv > button {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: #0088a9;
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
 .propos-container {
     top: 0;
     left: 0;
@@ -219,98 +229,6 @@ td > .white-filter {
     text-align: center;
 }
 
-.uninote {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: right;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.uninote-text {
-    margin-right: 100px;
-}
-
-.uninote > img {
-    width: 300px;
-    height: auto;
-    margin-right: 20px;
-}
-
-.uninote h3 {
-    font-size: 40px;
-}
-
-.uninote p {
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-}
-
-/*/ ====== SELLSIDE ====== /*/
-.sellside {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.sellside-text {
-    margin-right: 100px;
-}
-
-.sellside > img {
-    width: 300px;
-    height: auto;
-    margin-right: 20px;
-}
-
-.sellside h3 {
-    font-size: 40px;
-}
-
-.sellside p {
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-}
-
-/*/ ====== Pestisee ====== /*/
-.pestisee {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.pestisee-text {
-    margin-right: 100px;
-}
-
-.pestisee > img {
-    width: 120px;
-    height: auto;
-    margin-right: 20px;
-}
-
-.pestisee h3 {
-    font-size: 40px;
-}
-
-.pestisee p {
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-}
-
 footer {
     top: 0;
     left: 0;
@@ -336,4 +254,33 @@ footer {
 hr {
     margin: 15px auto;
     width: 60%;
+}
+
+.swiper {
+    width: 70%;
+    height: auto;
+    position: relative;
+  }
+
+.swiper-slide {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    margin: auto;
+    display: block;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    }
+
+.swiper-slide > p {
+    margin: 20px;
 }

@@ -7,7 +7,8 @@
     <link href="/style/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
@@ -36,6 +37,7 @@
             </h2>
             <h3 class="animate__animated animate__fadeInDown">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque iusto possimus odio harum corporis eligendi maxime doloribus? Quasi veniam, consequatur commodi hic libero id facere pariatur odio dolores? Aperiam, animi?
             </h3>
+            <a href="ressources/pdf/Vincent_ROURE-CV.pdf" target="_blank" class="mon-cv"><button>Télécharger mon CV</button></a>
         </div>
     </div>
 
@@ -146,38 +148,42 @@
         <h1 class="portfolio-title" id="#portfolio">
             Portfolio
         </h1>
-
-        <div class="uninote">
-            <img src="ressources/img/Logo.png" alt="">
-            <div class="uninote-text">
-                <a href="https://github.com/ZIK3Y/sae203"><h3>Uninote</h3></a>
-                <p>Site qui permet aux enseignants d'entrer les résultats scolaires aux étudiants, et ces derniers, peuvent les consulter.</p>    
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="sellside">
-            <div class="sellside-text">
-                <a href="https://github.com/ZIK3Y/projet_nsi/tree/master"><h3>Sellside</h3></a>
-                <p>Application en <b>Python</b> qui permet la gestion des commandes d'une entreprise grâce à une base de données</p>    
-            </div>
-            <img src="ressources/img/logo_app.png" alt="">
-        </div>
-
-        <hr>
-        
-        <div class="pestisee">
-            <img src="ressources/img/pestisee.webp" alt="">
-            <div class="pestisee-text">
-                <a href="https://github.com/MatteoBaldinetti/SAE-301-303"><h3>Pestisee</h3></a>
-                <p>Site qui permet la comparaison entre produits agro-alimentaire par rapport à plusieurs statistiques.</p>    
-            </div>
-        </div>
   
-
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://github.com/ZIK3Y/sae203" target="_blank"><img src="ressources/img/uninote.png" alt="" class="uninote-img"></a>
+                    <p>Uninote</p>
+                </div>
+                <div class="swiper-slide"> 
+                    <a href="https://github.com/MatteoBaldinetti/SAE-301-303" target="_blank"><img src="ressources/img/pestisee-interface.png" alt="" class="pestisee-img"></a>
+                    <p>Pestisee</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/ZIK3Y/rise_for_her"><img src="" alt="" class=""></a>
+                    <p>Rise For Her (Prototype)</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/ZIK3Y/projet_nsi"><img src="" alt="" class=""></a>
+                    <p>Sellside</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/ZIK3Y/breakpoint"><img src="" alt="" class=""></a>
+                    <p>Breakpoint (Prototype)</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://github.com/ZIK3Y/bomberman"><img src="" alt="" class=""></a>
+                    <p>Bomberman (Prototype)</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
+
     
+
     <footer>
         <div class="footer-text">
             <p>© 2025 Vincent Roure. <br> Tous droits réservés.</p>
@@ -189,8 +195,18 @@
         </div>
     </footer>
 
-    <script src="script/script.js"></script>      
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+
+        AOS.init();
+    </script>
+    <script src="script/script.js"></script>
 </body>
 </html>
