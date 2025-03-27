@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/style/style.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -19,7 +18,7 @@
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#propos">À propos</a></li>
                 <li><a href="#skills">Mes compétences</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
             </ul>
         </div>
         <a href="mailto:vincentroure.pro@gmail.com" class="contact"><button>Contact</button></a>
@@ -39,9 +38,10 @@
         </div>
     </div>
 
+    <div id="propos" style="display: none;"></div>
 
     <div class="propos-container">
-        <h2 data-aos="fade-right" class="propos" id="propos">
+        <h2 data-aos="fade-right" class="propos">
             À propos
         </h2>
         <img data-aos="fade-right" src="ressources/img/photo_linkedin.jpg" alt="Vincent">
@@ -146,6 +146,10 @@
         <h1 data-aos="fade-right" class="portfolio-title" id="#portfolio">
             Portfolio
         </h1>
+        <p data-aos="fade-right">
+            Retrouvez les princpaux travaux que j'ai réalisé durant plusieurs années.
+        </p>
+        <a data-aos="fade-right" href="portfolio.html"><button class="portfolio-button">Accéder à mon portfolio</button></a>
     </div>
 
     
@@ -161,16 +165,8 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        });
-
         AOS.init();
     </script>
     <script src="script/script.js"></script>

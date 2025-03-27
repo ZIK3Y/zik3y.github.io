@@ -6,6 +6,11 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
 :root {
     --bg-color: #081b29;
     --second-bg-color: #112e42;
@@ -29,7 +34,6 @@ header {
 
 
 li, a, button, .prenom{
-    font-family: 'Ubuntu', sans-serif;
     color: white;
     font-weight: 500;
     font-size: 16px;
@@ -77,12 +81,10 @@ li, a, button, .prenom{
     height: 100vh;
     margin: 0;
     padding: 0;
-    
 }
 
 .home-text{
     position: absolute;
-    font-family: 'Ubuntu', sans-serif;
     width: 50vw;
     margin: 35vh 10vw;
 }
@@ -125,12 +127,10 @@ li, a, button, .prenom{
 }
 
 .propos {
-    font-family: 'Ubuntu', sans-serif;
     color: white;
     font-weight: 500;
     font-size: 60px;
     text-align: center;
-
 }
 
 .propos-container > img {
@@ -143,7 +143,6 @@ li, a, button, .prenom{
 }
 
 .text-propos, .student-propos {
-    font-family: 'Ubuntu', sans-serif;
     color: white;
     font-weight: 400;
     font-size: 20px;
@@ -173,7 +172,6 @@ li, a, button, .prenom{
 }
 
 .skills-container > h3 {
-    font-family: 'Ubuntu', sans-serif;
     color: white;
     font-weight: 500;
     font-size: 60px;
@@ -188,7 +186,6 @@ li, a, button, .prenom{
 }
 
 td {
-    font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     font-size: 30px;
     color:white;
@@ -216,14 +213,16 @@ td > .white-filter {
     padding: 0;
     margin: 0;
     width: 100vw;
-    height: 70vh;
+    height: 30vh;
     background-color: var(--second-bg-color);
     padding-top: 2vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 
 .portfolio-title {
-    font-family: 'Ubuntu', sans-serif;
     color: white;
     font-weight: 500;
     font-size: 60px;
@@ -241,7 +240,6 @@ footer {
 }
 
 .footer-text > p {
-    font-family: 'Ubuntu', sans-serif;
     color: white;
     font-weight: 400;
     font-size: 20px;
@@ -250,4 +248,22 @@ footer {
 
 .footer-icons > a > img {
     margin: 10px 20px ;
+}
+
+.portfolio-button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: #0088a9;
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.portfolio-button:hover {
+    background-color: #006078;
+}
+
+.portfolio-container > p {
+    margin: 20px;
+    font-size: 20px;
 }
